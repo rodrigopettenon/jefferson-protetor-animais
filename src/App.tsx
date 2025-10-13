@@ -13,7 +13,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <Router> {/* ← AGORA É HashRouter */}
+      <Router basename="/jefferson-protetor-animais"> {/* ← ADICIONAR basename */}
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />
