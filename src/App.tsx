@@ -13,12 +13,15 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <Router basename="/jefferson-protetor-animais"> {/* ← ADICIONAR basename */}
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Router>
+      <Router basename="/jefferson-protetor-animais">
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/como-ajudar" element={<Index />} />
+        <Route path="/redes-sociais" element={<Index />} />
+        <Route path="/sobre" element={<Index />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
     </TooltipProvider>
   </QueryClientProvider>
 );
